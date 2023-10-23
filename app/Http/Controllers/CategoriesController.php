@@ -21,9 +21,11 @@ class CategoriesController extends Controller
     public function index()
     {
         $categories = Category::all();
+        //$categories->toArray();
         View::share([
             'categories' => $categories
         ]);
+
         return view('categories.index');
     }
 

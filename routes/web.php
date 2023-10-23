@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoriesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -7,12 +8,21 @@ use Illuminate\Support\Facades\Route;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+php artisan route:list
 |
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test-news');
 });
+
+//Route::get('/categories', [
+//    'as' => 'categories.index',
+//    'uses' => 'CategoriesController@index',
+//]);
+
+//Route::get('/news', [
+//    'as' => 'news.index',
+//    'uses' => 'NewsController@index',
+//]);
+

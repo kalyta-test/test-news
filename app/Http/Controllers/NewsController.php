@@ -17,7 +17,7 @@ class NewsController extends Controller
 
     public function index()
     {
-        $news = $this->newsService->getActiveNews();
+        $news = $this->newsService->getAllNews();
 
         View::share([
             'news' => $news
